@@ -54,8 +54,7 @@ func theContractShouldConfirmThatTheAddressesTakingPartInTheTransactionAreTheCor
 	return nil
 }
 
-// sceario with ipfs
-
+// scenario with ipfs
 func aSpecifiedAsAnIPFSHashForAGivenContract(arg1 string) error {
 	ipfsHash = arg1
 	return nil
@@ -69,7 +68,6 @@ func theContractShouldHaveAValidIPFSHash() error {
 }
 
 // scenario with jurisdiction
-
 func jurisdictionVariableOf(arg1, arg2 string) error {
 	if firstJurisdiction {
 		jurisdictionA = arg1
@@ -95,7 +93,7 @@ func thatWithAddressAndWithAddressHaveASwapContract(arg1, arg2, arg3, arg4 strin
 	partB = arg3
 	addressPartB = arg4
 	if realAddressPartA != addressPartA || realAddressPartB != addressPartB {
-		return errors.New("the address do not match")
+		return errors.New("the address does not match")
 	}
 	return nil
 }
@@ -143,7 +141,7 @@ func currentTimeHasPassedTheSwapTenor() error {
 func interestRateOfHasAppreciatedAndAlsoInterestRateOfHasAppreciated(arg1, arg2 string) error {
 	rateAAfter = rateA + 3*10000
 	rateBAfter = rateB + 2*10000
-	message = "Balance when both rate A and rate B have appreciated:"
+	message = "Balance when both rate A and rate B have been appreciated:"
 	return nil
 }
 
@@ -161,11 +159,10 @@ func afterCheckingTheDifferenceIsPaid() error {
 }
 
 // scenario when rate of A has appreciated but not of B
-
 func interestRateOfHasAppreciatedButInterestRateOfHasNotAppreciated(arg1, arg2 string) error {
 	rateAAfter = rateA + 1*10000
 	rateBAfter = rateB
-	message = "Balance when rate A has appreciated but not rate B:"
+	message = "Balance when rate A has been appreciated but not rate B:"
 	return nil
 }
 
@@ -185,7 +182,7 @@ func hasToPayDepreciatedRateAppreciatedRate(arg1, arg2, arg3, arg4 string) error
 func interestRateOfHasNotAppreciatedButInterestRateOfHasAppreciated(arg1, arg2 string) error {
 	rateAAfter = rateA
 	rateBAfter = rateB + 1*10000
-	message = "Balance when rate A has not appreciated but rate B has appreciated:"
+	message = "Balance when rate A has not appreciated but rate B has been appreciated:"
 	return nil
 }
 
@@ -199,7 +196,6 @@ func thisMeansThatWeHaveNegative() error {
 	return nil
 }
 
-// maybe
 func thatSwapAmountIs(arg1 int) error {
 	swapA = arg1
 	swapB = arg1
